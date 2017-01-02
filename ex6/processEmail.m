@@ -97,11 +97,11 @@ while ~isempty(email_contents)
     %       str2). It will return 1 only if the two strings are equivalent.
     %
 
-	idx = strmatch(str,vocabList,'exact')
+	idx = strmatch(str,vocabList,'exact');
 	
-	if ~isempty(idx)
+	if ~isempty(idx);
 	
-		word_indices = [word_indices; idx]
+		word_indices = [word_indices; idx];
 		
 	end
 
@@ -109,7 +109,7 @@ while ~isempty(email_contents)
 
 
     % Print to screen, ensuring that the output lines are not too long
-    if (l + length(str) + 1) > 78
+    if (l + length(str) + 1) > 78;
         fprintf('\n');
         l = 0;
     end

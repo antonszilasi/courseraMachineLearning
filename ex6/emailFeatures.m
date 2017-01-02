@@ -48,9 +48,12 @@ x = zeros(n, 1);
 %
 %
 
-
-for i=size(word_indices)
-	x(word_indices(i)) =1;
+for i=1:length(word_indices)
+%fprintf('word indices')
+	x(word_indices(i)) = 1;
+	
+	
+end
 
 % =========================================================================
     
